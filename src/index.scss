@@ -1,0 +1,293 @@
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffffffd;
+}
+
+* {
+  font-family: 'Inter', system-ui;
+}
+
+.wrapper {
+  max-width: 1065px;
+  margin: 10px auto;
+}
+
+header {
+  height: 85px;
+  background: #fff;
+  border: 1px solid rgba(199, 199, 199, 0.33);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+    .header-logo-link {
+      text-decoration: none;
+      color: #E5E5E5;
+    }
+
+    .header-logo {
+      margin-left: 35px;
+    }
+
+    .header-logo-monobank {
+      font-weight: bold;
+      font-size: 16px;
+      color: #000000;
+    }
+
+    .header-logo-universalbank {
+      font-weight: bold;
+      font-size: 12px;
+      color: #838383;
+    }
+
+    .search-block {
+      width: 150px;
+      height: 30px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-right: 35px;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 10px;
+
+        input {
+          width: 95px;
+          outline: none;
+          border: 0;
+          font-size: 16px;
+          color: rgb(66, 66, 66);
+          font-size: 16px;
+        }
+    }
+}
+
+.supporting-main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+
+    .sidebar {
+      width: 210px;
+      height: 500px;
+      background: #DFCEE9;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sidebar-block {
+      margin-top: 80px;
+      width: 165px;
+      height: 75px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .users-component, .selected-users-component {
+      width: 166px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+  // !!! Сделать hover
+
+    .users-component {
+      margin-bottom: 25px;
+    }
+
+    .icon-users-inactivee {
+      margin-left: 4px;
+    }
+
+    .users-active {
+      margin: 0;
+      font-weight: bold;
+      font-size: 16px;
+      color: #000000;
+      margin-left: 25px;
+    }
+
+    .users-inactive {
+      margin: 0;
+      font-size: 16px;
+      color: #000000;
+      margin-left: 25px;
+    }
+
+    .selected-users {
+      margin: 0;
+      font-weight: bold;
+      font-size: 16px;
+      color: #000000;
+      margin-left: 21px;
+    }
+
+    .selected-users-inactive {
+      margin: 0;
+      font-size: 16px;
+      color: #000000;
+      margin-left: 21px;
+    }
+
+// Главный экран
+    .main-container {
+      width: 835px;
+      height: 500px;
+      background: #F3F3F3;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .main-container-layout {
+        // display: none !important;
+        width: 685px;
+        height: 395px;
+        display: flex;
+        justify-content: space-between;
+
+          .main-container-left-side {
+            width: 320px;
+            height: 420px;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+            align-items: center;
+            padding-top: 1px;
+          }
+      }
+
+      .main-container-information-box {
+        width: 315px;
+        height: 396px;
+        background: rgba(127, 87, 222, 0.26);
+        border-radius: 10px;
+      }
+    } 
+}
+
+// Юзер элемент
+.user-item {
+  width: 300px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+
+    .user-item-section {
+      width: 265px;
+      height: 65px;
+      background: rgba(127, 87, 222, 0.26);
+      border-radius: 10px;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+      transition: outline 0.2s ease-in-out;
+
+      &:hover {
+        outline: 1px solid #70389C;
+      }
+      
+      //бордер при клике или при эктив
+
+        .user-item-avatar {
+          margin-left: 30px;
+        }
+
+        .user-item-login {
+          font-size: 16px;
+          color: #000000;
+          margin-left: 30px;
+        }
+    }
+
+    .icon-inactive {
+      cursor: pointer;
+    }
+}
+
+
+footer {
+  height: 85px;
+  background: #000000;
+  border-radius: 10px;
+  
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+    .footer-logo {
+      margin-left: 35px;
+      text-decoration: none;
+      color: #E5E5E5;
+    }
+
+    .footer-logo-monomank {
+      font-weight: bold;
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .footer-logo-universalbank {
+      font-weight: bold;
+      font-size: 12px;
+      color: #838383;
+    }
+
+    .footer-text {
+      font-size: 16px;
+      color: #FFFFFF;
+      margin-right: 35px;
+    }
+}
+
+// Экран Selected users
+.main-container-layout-selectedUsers {
+  // display: none !important;
+  width: 765px;
+  height: 415px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 150px;
+  height: 30px;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 19%;
+  top: 180px;
+  background: rgba(250, 82, 85, 0.7);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.main-container-layout-selectedUsers-container-users {
+  margin-top: 10px;
+  width: 320px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  align-items: center;
+  padding-top: 1px;
+}
