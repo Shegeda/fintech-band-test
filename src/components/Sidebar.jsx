@@ -6,15 +6,11 @@ function Sidebar() {
   const [isUsersActive, setIsUsersActive] = useState(true);
   const [isSelectedUsersActive, setIsSelectedUsersActive] = useState(false);
 
-  // Знаю, что можно проще прописать... + добавить local storage
   const onClickUsers = () => {
-    if (isUsersActive) {
-      setIsUsersActive(isUsersActive);
-      setIsSelectedUsersActive(isSelectedUsersActive);
-    } else {
+    if (!isUsersActive) {
       setIsUsersActive(!isUsersActive);
       setIsSelectedUsersActive(!isSelectedUsersActive);
-    }
+    } 
   }
 
   const onClickSelectedUsers = () => {

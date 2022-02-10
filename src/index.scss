@@ -284,10 +284,18 @@ button {
 .main-container-layout-selectedUsers-container-users {
   margin-top: 10px;
   width: 320px;
-  height: 395px;
+  height: 410px;
   display: flex;
   flex-direction: column;
   overflow: auto;
   align-items: center;
   padding-top: 1px;
+}
+
+.sad-emoji {
+  margin-top: 30%;
+  margin-left: 25%;
+}
+.users-not-selected {
+  margin-top: 10%; 
 }
